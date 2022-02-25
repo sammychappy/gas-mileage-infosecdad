@@ -1,30 +1,27 @@
-# GitHub Repo for Gas mileage project
+int main(void)
+{
+    puts("Welcome to your MPG Calculator.");
 
-Develop a program that will accept user input for miles driven and number of gallons used for each tankful. You will need to allow for decimal input for gallons and miles.
+    float totmiles;
+    float totgals;
 
-When the user enters both, you should print the miles-per-gallon (mpg) for that tankful, and increment the total miles and gallons used.When the user finishes, calculate and print out the total number of miles and gallons collected and the overall mpg.
+    while (1)
+    {
+        float gals;
+        printf("Enter gallons (-1 to exit): ");
+        scanf(gals);
 
-Example Program Output (bold is user input):
+        if gals == 1
+        {
+            break;
+        }
 
-Enter gallons used (-1 to end): 19.5
-Enter miles driven: 400
-The MPG for this tank was: 20.512820
+        float miles;
+        printf("Enter miles: ");
+        scanf(miles);
 
-Enter gallons used (-1 to end): 17.3
-Enter miles driven: 340
-The MPG for this tank was: 19.653179
-
-Enter gallons used (-1 to end): -1
-
-Total amount of fuel: 36.8 gallons
-Total distance driven: 740 miles
-Overall MPG: 20.108695
-*******************************************
-You will need to open a new window in VS Code and run `git clone` with the new repository.
-Create a `.txt` file with your pseudo code.
-Create a `.c` file for your code and get to work.
-Make sure you get your code into GitHub via `Stage all Changes` -> `Commit staged changes` -> `Push`
-Submission to Github should include the following:
-* `README.md` file with the pseudo code that shows your logic
-* `.c` file with the source code
-* compiled code (.exe or .out)
+        printf("MPG for trip: " (miles / gals));
+        increment totmiles and totgals
+    }
+    printf("Total miles, total gallons, total MPG");
+}
